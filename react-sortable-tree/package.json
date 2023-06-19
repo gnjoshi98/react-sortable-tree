@@ -1,0 +1,122 @@
+{
+  "name": "@gaurijoshi/react-sortable-tree",
+  "version": "4.4.0",
+  "description": "Drag-and-drop sortable component for nested data and hierarchies",
+  "main": "./index.js",
+  "module": "./index.esm.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib",
+    "prebuild": "yarn clean",
+    "build": "rollup -c",
+    "lint": "eslint '*.{js,json}' 'src/**/*.{ts,tsx}' --cache",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "prettier": {
+    "semi": false,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "bracketSameLine": true,
+    "tabWidth": 2,
+    "printWidth": 80
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gnjoshi98/react-sortable-tree.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "sortable-tree",
+    "virtual-tree"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "contributors": [
+    "Vitalii Shvetsov"
+  ],
+  "author": "Chris Fritz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gnjoshi98/react-sortable-tree/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/eslint-parser": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@rollup/plugin-commonjs": "^25.0.1",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@storybook/addon-actions": "^7.0.20",
+    "@storybook/addon-essentials": "^7.0.20",
+    "@storybook/addon-links": "^7.0.20",
+    "@storybook/addon-styling": "^1.3.0",
+    "@storybook/react": "^7.0.20",
+    "@storybook/react-webpack5": "^7.0.20",
+    "@types/lodash.isequal": "^4.5.6",
+    "@types/react": "^17.0.62",
+    "@types/react-dom": "^17.0.20",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "babel-loader": "^9.1.2",
+    "eslint": "^8.42.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sonarjs": "^0.19.0",
+    "eslint-plugin-storybook": "^0.6.12",
+    "eslint-plugin-unicorn": "^47.0.0",
+    "postcss": "^8.4.24",
+    "prettier": "^2.8.8",
+    "react": "^17.0.2",
+    "react-dnd-touch-backend": "^14.1.1",
+    "react-dom": "^17.0.2",
+    "rollup": "^3.25.1",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "^7.0.20",
+    "typescript": "^5.1.3"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dnd": "14.0.4",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "@nosferatu500/react-dnd-scrollzone": "^2.0.10",
+    "lodash.isequal": "^4.5.0",
+    "react-dnd": "14.0.4",
+    "react-dnd-html5-backend": "^14.1.0",
+    "react-virtuoso": "^4.3.10"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not ie <= 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "private": false
+}

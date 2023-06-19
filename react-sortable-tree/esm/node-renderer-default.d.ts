@@ -1,0 +1,41 @@
+import React from 'react';
+import { ConnectDragPreview, ConnectDragSource } from 'react-dnd';
+import './node-renderer-default.css';
+import { NodeData, TreeItem } from '.';
+export interface NodeRendererProps {
+    node: TreeItem;
+    path: number[];
+    treeIndex: number;
+    isSearchMatch: boolean;
+    isSearchFocus: boolean;
+    canDrag: boolean;
+    scaffoldBlockPxWidth: number;
+    toggleChildrenVisibility?(data: NodeData): void | undefined;
+    buttons?: JSX.Element[] | undefined;
+    className?: string | undefined;
+    style?: React.CSSProperties | undefined;
+    title?: ((data: NodeData) => JSX.Element | JSX.Element) | undefined;
+    subtitle?: ((data: NodeData) => JSX.Element | JSX.Element) | undefined;
+    icons?: JSX.Element[] | undefined;
+    lowerSiblingCounts: number[];
+    swapDepth?: number | undefined;
+    swapFrom?: number | undefined;
+    swapLength?: number | undefined;
+    listIndex: number;
+    treeId: string;
+    rowDirection?: 'ltr' | 'rtl' | string | undefined;
+    connectDragPreview: ConnectDragPreview;
+    connectDragSource: ConnectDragSource;
+    parentNode?: TreeItem | undefined;
+    startDrag: ({ path }: {
+        path: number[];
+    }) => void;
+    endDrag: (dropResult: unknown) => void;
+    isDragging: boolean;
+    didDrop: boolean;
+    draggedNode?: TreeItem | undefined;
+    isOver: boolean;
+    canDrop?: boolean | undefined;
+}
+declare const NodeRendererDefault: React.FC<NodeRendererProps>;
+export default NodeRendererDefault;
